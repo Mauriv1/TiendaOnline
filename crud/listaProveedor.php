@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Lista de Productos</title>
+    <title>Lista de Proveedores</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,14 +11,25 @@
   </head>
   <body>
       <div class="container">
-        <h1>Lista de Productos</h1>
-        <a class ="btn btn-primary" href="respaldoGeneral.php" style="float: right";>Crear Respaldo</a>
-       <a class ="btn btn-info" href="reporteProducto.php" style="float: right";>Generar Reporte</a>
-       <a class ="btn btn-success" href="nuevoProducto.php" style="float: right";>Agregar Producto</a>
-
-       <?php
-        include_once("consultaProductos.pho");
-        /* require 'phpqrcode/qrlib.php';
+      <h1>Lista de Proveedores</h1>
+      <a class ="btn btn-primary" href="respaldoGeneral.php" style="float: right";>Crear Respaldo</a>
+      <a class ="btn btn-info" href="reporteProveedor.php" style="float: right";>Generar Reporte</a>
+      <a class ="btn btn-success" href="nuevoProveedor.php" style="float: right";>Agregar Proveedor</a>
+      <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id_Proveedor</th> 
+                    <th scope="col">Proveedor</th>
+                    <th scope="col">Banco</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">eliminar</th>
+                    <th scope="col">Borrado logico</th>               
+                </tr>
+            </thead>
+        </table>
+      <!-- <?php 
+        include_once("consultaProveedor.php");
+        require 'phpqrcode/qrlib.php';
         //nombramos la carpeta
         $dir="temp/";
         //creamos la carpeta en caso de no existir
@@ -27,15 +38,9 @@
 
         //recuperar la ejecucion del resultado del query
         
-        ?> */
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Id_Producto</th>                
-                </tr>
-            </thead>
-        </table>
-       ?>
+      ?> -->
+        
+    
 
       </div>
     <!-- Optional JavaScript -->
