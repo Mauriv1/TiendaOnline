@@ -1,0 +1,106 @@
+body{
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(0, 0%, 96%);
+  }
+  
+  .signin{
+    padding: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    position: relative;
+    height: 700px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 0px 30px 125px -5px rgb(188, 191, 194);
+}
+  
+  .back-img{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: url('https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?cs=srgb&dl=pexels-cottonbro-5483077.jpg&fm=jpg')no-repeat   center center;
+    background-size: cover;
+  }
+
+  h2{
+    margin-top: 0px;
+    text-align: center;
+  }
+  
+  .form-section{
+    padding: 70px 90px 70px 90px;
+  }
+  .keep-text{
+    font-size: 15px;
+    color: #BDBDBD;
+  }
+  .forgot-text{
+    font-size: 12px;
+    color: #BDBDBD;
+    text-align: right;
+  }
+
+  .imagen-empresa{
+    padding-left: 0px;
+  }
+
+  .ingresar-text{
+    padding-left: 50px;
+  }
+ 
+  a{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 20%;
+    background-color: #4866c9;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.50);
+    transition: all 0.3s;
+}
+
+a:hover{
+    background-color: #a1a0e2;
+}
+
+.btn{
+    position: center;
+    margin: 10;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s;
+    padding: 10px 35px;
+    border-radius: 50px;
+    order: 0;
+}
+
+.caja{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6em;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.text-center{
+    color: #4866c9;
+
+}
+.text-figure{
+    color: #4866c9;
+}
