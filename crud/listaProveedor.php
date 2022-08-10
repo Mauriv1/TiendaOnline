@@ -15,30 +15,57 @@
       <a class ="btn btn-primary" href="respaldoGeneral.php" style="float: right";>Crear Respaldo</a>
       <a class ="btn btn-info" href="reporteProveedor.php" style="float: right";>Generar Reporte</a>
       <a class ="btn btn-success" href="nuevoProveedor.php" style="float: right";>Agregar Proveedor</a>
-      <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Id_Proveedor</th> 
-                    <th scope="col">Proveedor</th>
-                    <th scope="col">Banco</th>
-                    <th scope="col">Editar</th>
-                    <th scope="col">eliminar</th>
-                    <th scope="col">Borrado logico</th>               
-                </tr>
-            </thead>
-        </table>
-      <!-- <?php 
-        include_once("consultaProveedor.php");
-        require 'phpqrcode/qrlib.php';
-        //nombramos la carpeta
-        $dir="temp/";
-        //creamos la carpeta en caso de no existir
-        if(!file_exists($dir))
-            mkdir($dir);
+      
+      <?php 
+      include_once("conexion.php");
+      include_once("consultaProveedor.php");
+      $resultado = $conexion -> query($listaProveedor);
 
-        //recuperar la ejecucion del resultado del query
-        
-      ?> -->
+      //recuperar la ejecucion del resultado del query 
+      ?>
+      <table class="table">
+        <thead>
+          <tr>
+          <th scope="col">Id_Proveedor</th> 
+          <th scope="col">Proveedor</th>
+          <th scope="col">Banco</th>
+          <th scope="col">Editar</th>
+          <th scope="col">eliminar</th>
+          <th scope="col">Borrado logico</th>
+          </tr>
+        </thead>
+        <tbody>
+        <?php
+          while($row=$resultado->fetch_assoc()){
+              
+        ?>
+          
+          <tr>
+              <td>
+                  <?php echo $row['id_proveedor'] . "<br>";?>
+              </td>
+              <td>
+                  <?php echo $row['proveedor'] . "<br>";?>
+              <td>
+                  <?php echo $row['banco'] . "<br>";?>
+              </td>
+              </td>
+              <td>
+                  <a href="editarProveedor.php?id=<?php echo $row['id_proveedor'];?>">Editar</a>
+              </td>
+              <td>
+                  <a href="eliminarProveedor.php?id=<?php echo $row['id_proveedor'];?>">Eliminar</a>
+              </td>
+              <td>
+                  <a href="borradoLogico.php?id=<?php echo $row['id_proveedor'];?>">Borrado logico</a>
+              </td>
+          </tr>
+                
+        <?php
+        }
+        ?>
+        </tbody>
+      </table>
         
     
 
