@@ -14,10 +14,7 @@
         <?php
         require_once("conexion.php");
         $valorIdProducto=$_GET['id_producto'];
-        $valorIdMarca=$_GET['id_marca'];
-        $valorIdProveedor=$_GET['id_proveedor'];
-        $consultaRegistroProducto="SELECT * FROM producto
-                                    WHERE id_producto=" . $valorIdProducto;
+        $consultaRegistroProducto="SELECT * FROM producto WHERE id_producto=" . $valorIdProducto;
         $resultado=$conexion -> query($consultaRegistroProducto);
 
         while ($row=$resultado -> fetch_assoc()){
