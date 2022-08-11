@@ -11,7 +11,15 @@
   </head>
   <body>
     <div class="container">
-    
+      <picture>
+          <img src="../assets/images/construccion.png" class="construccion" alt="En Construccion">
+      </picture>
+      </div>
+      <style>
+          .construccion{
+              width: 1000px;
+              }
+    </style>
     <?php
         require_once("conexion.php");
         $valorIdProveedor=$_GET['id_proveedor'];

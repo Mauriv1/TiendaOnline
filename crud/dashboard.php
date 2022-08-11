@@ -94,7 +94,7 @@
                             <a href="editarProducto.php?id_producto=<?php echo $row['id_producto']; ?>">Editar</a>
                         </td>
                         <td>
-                            <a href="#" data-href="eliminar.php?id=<?php echo $row['id_producto']; ?>" data-toggle="modal" data-target="#confirm-delete">Eliminar</a>
+                            <a href="eliminarProducto.php" >Eliminar</a>
                         </td>
                     </tr>
                     <?php

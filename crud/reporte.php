@@ -2,6 +2,20 @@
 include('fpdf/fpdf.php');
 include('consultaProducto.php');
 
+?>
+<div>
+    <picture>
+        <img src="../assets/images/construccion.png" class="construccion" alt="En Construccion">
+    </picture>
+</div>
+<style>
+    .construccion{
+        width: 1000px;
+        }
+</style>
+
+<?php
+
 $diassemana = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
 $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
 $fecha =  $diassemana[date('w')]." ".date('d')." de ".$meses[date('n')-1]. " del ".date('Y') ;
