@@ -28,6 +28,8 @@
           <div class="visitar-text">
                <a href="crud/dashboard.php" class="btn">Administrar</a>
           </div>
+
+          <a href="https://github.com/Mauriv1/TiendaOnline" class="btn-btn">Repositorio<<</a>
           
      </div><!--/.signin-->
    
