@@ -11,10 +11,18 @@
   </head>
   <body>
       <div class="container">
-      <h1>Lista de Proveedores</h1>
-      <a class ="btn btn-primary" href="respaldoGeneral.php" style="float: right";>Crear Respaldo</a>
-      <a class ="btn btn-info" href="reporteProveedor.php" style="float: right";>Generar Reporte</a>
-      <a class ="btn btn-success" href="nuevoProveedor.php" style="float: right";>Agregar Proveedor</a>
+      <div class="img">
+          <picture>
+              <img src="../assets/images/INOUT-principal.png" alt="img">
+          </picture>
+      </div>
+      <div class="listas">
+                <a class="btn" href="http://localhost/TiendaOnline/crud/dashboard.php" style="float";> Lista de Productos</a>
+                <a class="btn" href="http://localhost/TiendaOnline/crud/listaProveedor.php" style="float";> Lista de Proveedores</a>
+      </div>
+      <a class ="btn btn-primary" href="respaldoGeneral.php" style="float";>Crear Respaldo</a>
+      <a class ="btn btn-info" href="reporteProveedor.php" style="float";>Generar Reporte</a>
+      <a class ="btn btn-success" href="nuevoProveedor.php" style="float";>Agregar Proveedor</a>
       
       <?php 
       include_once("conexion.php");

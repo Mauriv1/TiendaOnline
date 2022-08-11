@@ -27,9 +27,12 @@
             </picture>
         </div>
         <div class="text_titulo">
-            <h1>Lista de Productos</h1>
-            <a class="btn btn-success" href="nuevoProducto.php" style="float";> Agregar Producto</a>
-            <a class="btn btn-success" href="http://localhost/TiendaOnline/index.php" style="float";> Salir de Administrar</a>
+            <div class="listas">
+                <a class="btn" href="http://localhost/TiendaOnline/crud/dashboard.php" style="float";> Lista de Productos</a>
+                <a class="btn" href="http://localhost/TiendaOnline/crud/listaProveedor.php" style="float";> Lista de Proveedores</a>
+            </div>
+                <a class="btn btn-success" href="nuevoProducto.php" style="float";> Agregar Producto</a>
+                <a class="btn btn-success" href="http://localhost/TiendaOnline/index.php" style="float";> Salir de Administrar</a>
             <?php
                 include_once("conexion.php");
                 include_once("consultaProducto.php");
