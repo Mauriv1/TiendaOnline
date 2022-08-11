@@ -27,11 +27,24 @@
             </picture>
         </div>
         <div class="text_titulo">
-            <div class="listas">
-                <a class="btn" href="http://localhost/TiendaOnline/crud/dashboard.php" style="float";> Lista de Productos</a>
-                <a class="btn" href="http://localhost/TiendaOnline/crud/listaProveedor.php" style="float";> Lista de Proveedores</a>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <h1 class="navbar-brand">PRINCIPAL</h1>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://localhost/TiendaOnline/crud/dashboard.php">Lista de Productos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/TiendaOnline/crud/listaProveedor.php">Lista de Provedores</a>
+                    </li>
+                    
+                </ul>
             </div>
+        </nav>
                 <a class="btn btn-success" href="nuevoProducto.php" style="float";> Agregar Producto</a>
+                <a class="btn btn-success" href="reporte.php" style="float";> Generar Reporte</a>
                 <a class="btn btn-success" href="http://localhost/TiendaOnline/index.php" style="float";> Salir de Administrar</a>
             <?php
                 include_once("conexion.php");

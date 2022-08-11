@@ -11,7 +11,8 @@
   </head>
   <body>
     <div class="container">
-        <?php
+    
+    <?php
         require_once("conexion.php");
         $valorIdProveedor=$_GET['id_proveedor'];
         $consultaRegistroProveedor="SELECT * FROM proveedor WHERE id_proveedor=" . $valorIdProveedor;
@@ -22,7 +23,19 @@
         <form action="actualizarProveedor.php" method="post">
             <label for="id_proveedor">id_proveedor</label>
             <input type="text" class="form-control" name="id_proveedor" id="id_proveedor" value=<?php echo $valorIdProveedor;?> disabled>
+
+            <label for="proveedor">proveedor</label>
+            <input type="text" class="form-control" name="proveedor" id="proveedor" value=<?php echo $row['proveedor'];?>>
+
+            <label for="banco">banco</label>
+            <input type="text" class="form-control" name="banco" id="banco" value=<?php echo $row['banco'];?>>
         </form>
+        
+        <!-- <h1>Editar Proveedores<?php echo $valorIdProveedor?></h1>
+        <form action="actualizarProveedor.php" method="post">
+            <label for="id_proveedor">id_proveedor</label>
+            <input type="text" class="form-control" name="id_proveedor" id="id_proveedor" value=<?php echo $valorIdProveedor;?> disabled>
+        </form> -->
         <?php
         }
         ?>
