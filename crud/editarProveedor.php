@@ -11,20 +11,13 @@
   </head>
   <body>
     <div class="container">
-      <picture>
-          <img src="../assets/images/construccion.png" class="construccion" alt="En Construccion">
-      </picture>
-      </div>
-      <style>
-          .construccion{
-              width: 1000px;
-              }
-    </style>
+    <!-- <h1>Editar Proveedores<?php echo $valorIdProveedor?></h1> -->
     <?php
         require_once("conexion.php");
-        $valorIdProveedor=$_GET['id_proveedor'];
+        //Cuando usamos get, debe llamarse igual que como se ve en URL, no necesariamente coincidir con la BD
+        $valorIdProveedor=$_GET['id'];
         $consultaRegistroProveedor="SELECT * FROM proveedor WHERE id_proveedor=" . $valorIdProveedor;
-        $resultado=$conexion -> query($consultaRegistroProveedor);
+        $resultado=$conexion->query($consultaRegistroProveedor);
         while($row=$resultado->fetch_assoc()){    
         ?>
         <h1>Editar Proveedores<?php echo $valorIdProveedor?></h1>
